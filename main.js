@@ -20,6 +20,7 @@ function createWindow(){
   win.on('closed',() => {
     win = null;
   });
+  win.setAlwaysOnTop(true);
   menu.append(new MenuItem({
     label: 'Edit Address',
     accelerator: 'U',
